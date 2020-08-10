@@ -13,7 +13,7 @@ const UserSchema = require('./src/lib/schemas/user')
 app.use('*', cors())
 app.use('/graphql', expressGraphql({
   schema: UserSchema,
-  graphql: true,
+  graphiql: true,
 }))
 
 app.listen(port, () => {
